@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Css Landing Page</title>
+       <link rel="stylesheet" href="{% static 'css/landing.css' %}">
+    </head>
+    <body id="bg" style="background-image: url('{% static "images/img2.jpg" %}')";>
+        <!-- main header -->
+        <header id="container">
+            <h1><span style="color: darkorange; padding: 4px; border: 2px solid blue; background-color: white; border-radius: 0 10px 0 10px;">J</span> spider Institute</h1>
+            <div>
+                <a href="">Contact</a>
+                <a href="">Courses</a> 
+                <a href="">Update</a>
+                <a href="">Aboute</a>
+                <a href="">Help</a>
+            </div>
+        </header>
+            <div id="body_container" class="landing container">
+                <h2><i>WELCOME TO JSPIDERS</i></h2> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate odio officiis quaerat esse ut,
+                     debitis eum fugiat reprehenderit architecto, voluptatum ex, nostrum sequi eius libero ratione accusantium expedita.
+                    Rem in velit quod ad labore asperiores iste excepturi odit error, eveniet officia ut perspiciatis voluptates eaque eius voluptatem et quia iure recusandae, 
+                     architecto delectus debitis laboriosam quisquam. Saepe nam consectetur, sunt sit veniam deleniti unde eius neque excepturi quisquam labore doloremque?
+                     Maiores ut debitis beatae modi temporibus, hic dicta rem voluptatibus omnis earum nesciunt accusamus eaque perspiciatis ipsa vel dolore. Expedita delectus sapiente provident quod.
+                     Sequi magni illum, libero id aspernatur impedit nemo? Quisquam explicabo quae dicta nisi, consequatur commodi iusto reprehenderit exercitationem eligendi cupiditate illum neque
+                    sequi doloremque ipsam ex aliquid perferendis? Earum recusandae quos iure nesciunt. Inventore sapiente debitis vel nulla quidem omnis. Impedit iste odit, fugit dolorum veniam vero quaerat voluptates atque voluptatem in maiores dignissimos libero reprehenderit cupiditate recusandae, sit reiciendis saepe, totam deserunt soluta voluptatum. Enim, accusantium veniam! Necessitatibus, soluta qui. Consectetur minus laborum nesciunt at dolorem. Unde necessitatibus omnis id consequatur quam, iusto voluptates tenetur aut at dignissimos molestias nulla velit eos amet a magni porro atque! Nemo, officia. Dolorem provident asperiores aut quaerat hic.</p>
+           
+                 <button>viwe more</button>
+            </div>     
+            <h2><a href="{% url 'app2:formpage' %}">Go to formpage</a></h2>
+            <h2><a href="{% url 'app2:registrationformpage' %}">Go to registrationformpage</a></h2>
+    </body>
+</html>

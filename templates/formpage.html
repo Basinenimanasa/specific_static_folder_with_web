@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formpage</title>
+    <link rel="stylesheet" href="{% static 'css/form.css' %}">
+
+</head>
+<center>
+<header><h1>Edit your Details</h1></header>
+    <body id="bg" style="background-image: url('{% static "images/ram1.jpg" %}')";>
+        <form action="">
+         <table>
+         <tr>   
+         <td> <label><b>Username</b></label></td>
+         <td><input type="text"></td>
+         </tr>
+        <tr>
+        <td> <label><b>Password</label></b></td>
+        <td><input type="text"> </td>
+         </tr>
+        <tr>
+        <td> <label><b>Full Name</label></b></td>
+        <td><input type="text"></td>
+        </tr>
+        <tr>
+         <td><label><b>Email</label></b></td>
+        <td><input type="text"> </td> 
+        </tr>
+        <tr>
+        <td><label><b>Phone number</b></label></td>
+         <td><input type="text"></td>
+        </tr>
+        <tr>
+        <td><label><b>Address</b></label></td>
+        <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><label><b>Hotel Branch</b></label> </td>
+            <td><select >
+                <option>...Select...</option>
+                <option>Dehli</option>
+                <option>Karnataka</option>
+                <option>Banglore</option>
+                <option>andhra</option>
+                <option>Kgf</option>
+                <option>tamilnadu</option>
+
+            </select></td>
+            </tr>
+        <tr>
+          <td>  <input type="submit">
+            <input type="reset"></td>
+        </tr>
+    </table>
+    </form>
+    <h2><a href="{% url 'app2:registrationformpage' %}">Go to registrationformpage</a></h2>
+</body>
+</center>
+</html>
